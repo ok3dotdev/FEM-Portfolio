@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { BrandingCircle } from "./BrandingCircle";
 
 const Hero = () => {
     return (
@@ -23,7 +24,7 @@ const Hero = () => {
                         height={500}
                         priority
                     />
-                    <h1 className="mt-[60%] md:mt-0 text-[40px] md:text-heading-xl mb-8 font-bold z-10">
+                    <h1 className="mt-[60%] md:mt-0 text-[40px] md:text-heading-xl mb-8 font-bold z-10 text-center lg:text-left">
                         <span>Nice to meet you!</span>
                         <br />
                         <span>
@@ -33,8 +34,10 @@ const Hero = () => {
                             </span>
                         </span>
                     </h1>
-                    {/* <BrandingCircle/> */}
-                    <p className="max-w-sm mb-12 text-body-m font-medium">
+                    <div className="absolute left-[300px] top-[120px]">
+                        {/* <BrandingCircle /> */}
+                    </div>
+                    <p className="max-w-sm mb-12 text-body-m font-medium text-center lg:text-left">
                         Based in Toronto, I'm a front-end developer passionate
                         about building accessible web apps that users love.
                     </p>
